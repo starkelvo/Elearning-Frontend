@@ -1,16 +1,17 @@
 <template>
   <div>
     <section>
-      <p class="sect">
+      <div class="sect">
         <span>Lorem Ipsum</span><br />
         simply dummy text of the printing and typesetting industry. Lorem Ipsum
         has been the industry's standard dummy text ever since the 1500s, when
         an unknown printer took a galley of type and scrambled it to make a type
         specimen book. <br />
         <button class="button"><a href="#">JOIN A LIVE CLASS NOW</a></button>
-      </p>
+      </div>
       <div class="image"></div>
     </section>
+    <hr>
   </div>
 </template>
 
@@ -20,22 +21,39 @@ export default {};
 
 <style scoped>
 section {
+  width: 100%;
+  display: inline-flex;
+  justify-items: center;
+  justify-content: center;
+
+}
+
+@media (max-width: 858px) {
+  section {
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap-reverse;
+    justify-items: center;
+    justify-content: center;
+  }
+}
+
+.sect {
   width: 40%;
   height: calc(100vh - 80px);
-}
-.sect {
   font-size: 18px;
-  margin-left: 50px;
-  margin-top: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
   font-weight: lighter;
   line-height: 1.4;
 }
 @media (max-width: 858px) {
-  p {
-    width: 80%;
+  .sect {
+    width: 100%;
     background-size: 100%;
     height: calc(50vh);
     margin-top: 10px;
+    display: block;
   }
 }
 span {
@@ -63,8 +81,18 @@ a {
   background: url("../assets/images/undraw_teaching_f1cm.png") no-repeat;
   background-size: cover;
   height: calc(100vh - 180px);
-  width: 50%;
-  float: right;
-  top: 0;
+  width: 40%;
+  margin-right: 20px;
+}
+@media (max-width: 858px) {
+  .image {
+    background-size: cover;
+    height: calc(100vh - 180px);
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+hr {
+  border-color: #2f80ed;
 }
 </style>
