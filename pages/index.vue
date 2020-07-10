@@ -5,6 +5,7 @@
       <Header />
       </div>
       <Courses />
+      <Footer />
     </div>
 </template>
 
