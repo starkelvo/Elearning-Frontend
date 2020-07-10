@@ -1,9 +1,11 @@
 <template>
-  <div class="container">
+  <div class="containe">
     <div>
       <Navbar />
       <Header />
       </div>
+      <Courses />
+      <Footer />
     </div>
 </template>
 
@@ -12,13 +14,22 @@ export default {}
 </script>
 
 <style>
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: start;
 }
 
 .title {
