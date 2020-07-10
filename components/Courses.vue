@@ -12,7 +12,8 @@
     <!-- The blue rectangle part -->
     <div class="blue-rectangle">
         <h1 id="main">GET PERSONAL LEARNING GUIDE</h1>
-        <span id="main2">subscribe now and get a private tutor</span>
+        <h3 id="main2">subscribe now and get a private tutor</h3>
+        <button id="subscribe"><a href="#">SUBSCRIBE NOW</a></button>
     </div>
     <h2>TOP COURSES </h2>
     <!-- Top courses -->
@@ -68,19 +69,14 @@
     background: #2D9CDB;
   }
   @media (max-width: 858px) {
-  .blue-rectangle,span {
-    position: relative;
-    overflow-wrap: break-word;
-    word-break: break-all;
-    width: 100%;
-    height: 328px;
-    left: 0px;
-    
+  .blue-rectangle {
+      display: flexbox;
+      flex-shrink: inherit;
   }
 }
 h1 {
     position: relative;
-    width: 680px;
+    width: 650px;
     height: 35px;
     left: 360px;
     padding-top: 78px;
@@ -95,9 +91,9 @@ h1 {
 
     color: #EDE9E9;
 }
-#main2 {
+h3 {
     position: absolute;
-    width: 595px;
+    width: 570px;
     height: 35px;
     left: 403px;
     top: 128px;
@@ -112,5 +108,26 @@ h1 {
     text-align: center;
 
     color: #383838;
+}
+#subscribe{
+    position: relative;
+    width: 385px;
+    height: 66px;
+    left: 500px;
+    top: 103px;
+    border: none;
+    background: #FFFFFF;
+}
+button>a {
+    font-family: Cardo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 92.69%;
+    /* or 35px */
+
+    text-align: center;
+
+    color: #363636;
 }
 </style>
