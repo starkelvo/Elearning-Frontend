@@ -61,7 +61,6 @@
   }
 
   .blue-rectangle {
-    position: relative;
     width: 100%;
     height: 328px;
     left: 0px;
@@ -92,11 +91,11 @@ h1 {
     color: #EDE9E9;
 }
 h3 {
-    position: absolute;
+    position: relative;
     width: 570px;
     height: 35px;
     left: 403px;
-    top: 128px;
+    top: 50px;
 
     font-family: Cardo;
     font-style: normal;
@@ -114,7 +113,7 @@ h3 {
     width: 385px;
     height: 66px;
     left: 500px;
-    top: 103px;
+    top: 53px;
     border: none;
     background: #FFFFFF;
 }

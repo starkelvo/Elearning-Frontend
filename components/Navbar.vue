@@ -3,7 +3,8 @@
     <nav>
       <input type="checkbox" name="" id="check" />
       <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
+        <!-- <i class="fas fa-bars"></i> -->
+        <font-awesome-icon :icon="['fas', 'bars']"/>
       </label>
       <label for="logo" class="logo">E-LOGO</label>
       <ul>
@@ -86,6 +87,7 @@ a:hover {
   label.logo {
     font-size: 30px;
     padding-left: 50px;
+    position: fixed;
   }
   nav ul li a {
     font-size: 16px;
@@ -93,10 +95,13 @@ a:hover {
 }
 @media (max-width: 858px) {
   .checkbtn {
+    position: fixed;
     display: block;
+    left: 90%;
   }
   ul {
     position: fixed;
+    z-index: 1;
     width: 100%;
     height: 100vh;
     background: #6b62fd;
