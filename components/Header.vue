@@ -1,6 +1,8 @@
 <template>
   <div>
+    <!-- Header container (Section) -->
     <section>
+      <!-- Header writeup -->
       <div class="sect">
         <span>Lorem Ipsum</span><br />
         simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -9,6 +11,7 @@
         specimen book. <br />
         <button class="button"><a href="#">JOIN A LIVE CLASS NOW</a></button>
       </div>
+      <!-- Header Image -->
       <div class="image"></div>
     </section>
     <hr>
@@ -20,6 +23,7 @@ export default {};
 </script>
 
 <style scoped>
+/* Header Container Style */
 section {
   width: 100%;
   display: inline-flex;
@@ -37,7 +41,7 @@ section {
     justify-content: center;
   }
 }
-
+/* Header writeup style */
 .sect {
   width: 40%;
   height: calc(100vh - 80px);
@@ -60,6 +64,7 @@ span {
   font-size: 48px;
   font-weight: 900;
 }
+/* Button */
 .button {
   background-color: #f42525; /* Green */
   border: none;
@@ -77,6 +82,7 @@ span {
 a {
   color: white;
 }
+/* Header image */
 .image {
   background: url("../assets/images/undraw_teaching_f1cm.png") no-repeat;
   background-size: cover;
@@ -92,6 +98,7 @@ a {
     margin-right: 20px;
   }
 }
+/* Horizontal line */
 hr {
   border-color: #2f80ed;
 }

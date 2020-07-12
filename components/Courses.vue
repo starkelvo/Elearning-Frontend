@@ -73,11 +73,11 @@
       flex-shrink: inherit;
   }
 }
-h1 {
+#main {
     position: relative;
-    width: 650px;
+    width: 70%;
     height: 35px;
-    left: 360px;
+    left: 5em;
     padding-top: 78px;
     font-family: Cardo;
     font-style: normal;
@@ -90,11 +90,11 @@ h1 {
 
     color: #EDE9E9;
 }
-h3 {
+#main2 {
     position: relative;
-    width: 570px;
+    width: 70%;
     height: 35px;
-    left: 403px;
+    left: 5em;
     top: 50px;
 
     font-family: Cardo;
@@ -110,9 +110,9 @@ h3 {
 }
 #subscribe{
     position: relative;
-    width: 385px;
+    width: 30%;
     height: 66px;
-    left: 500px;
+    left: 30em;
     top: 53px;
     border: none;
     background: #FFFFFF;
@@ -126,7 +126,7 @@ button>a {
     /* or 35px */
 
     text-align: center;
-
+    
     color: #363636;
 }
 </style>
