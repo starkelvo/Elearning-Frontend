@@ -19,5 +19,16 @@ export default {
 </script>
 
 <style scoped>
-
+ul {
+    position: relative;
+    display: block;
+    list-style: none;
+    line-height: 50px;
+    border: 1px solid gray;
+    width: 20vw;
+    height: 100vh;
+    margin-left: 2em;
+    font-weight: 700;
+    font-size: large;
+}
 </style>
