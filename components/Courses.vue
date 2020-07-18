@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div class="wrap-courses">
     <h2>COURSES </h2>
     <!-- All courses -->
     <div id="card" class="card" style="width: 18rem;"><img src="../assets/images/brain-color-colorful-cube-19677.jpg"
@@ -25,17 +26,27 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 <script>
   export default {}
 
 </script>
 <style scoped>
+.wrap-courses{
+  width: 100%;
+  left: 0;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  margin-top: -12%;
+  padding-top: 50px;
+  z-index: 48;
+}
   h2 {
-    padding-left: 60px;
     margin-bottom: 40px;
     font-family: montserrat;
     color: #2f80ed;
+    text-align: center;
   }
 
   #card {

@@ -8,11 +8,14 @@
       <!-- Header writeup -->
       <div class="sect">
           <form action="">
-            
-            <font-awesome-icon class="awesome" :icon="['fas', 'envelope']"/> <input type="email" placeholder="Email" required> <br>
-            <font-awesome-icon class="awesome" :icon="['fas', 'lock']"/><input type="password" placeholder="Password" required> <br>
-            <button type="submit" class="btn btn-primary">SIGN UP</button> <br>
-            <small><a href=""  style="color: #00edff; margin-left: 12.5em">Forgot Password?</a></small>
+            <div class="input-wrap">
+               <font-awesome-icon class="awesome" :icon="['fas', 'envelope']"/> <input type="email" placeholder="Email" required>
+            </div> 
+             <div class="input-wrap">
+                       <font-awesome-icon class="awesome" :icon="['fas', 'lock']"/><input type="password" placeholder="Password" required> <br>
+             </div>
+            <button type="submit" class="btn btn-primary">log in</button> <br>
+            <small><nuxt-link to="/signup" class="small" >Forgot Password?</nuxt-link></small>
           </form>
       </div>
     </section>
@@ -44,15 +47,6 @@ section {
 
 }
 
-@media (max-width: 858px) {
-  section {
-    width: 100%;
-    display: flexbox;
-    flex-wrap: wrap-reverse;
-    justify-items: center;
-    justify-content: center;
-  }
-}
 /* Header writeup style */
 .sect {
   width: 40%;
@@ -63,16 +57,6 @@ section {
   font-weight: lighter;
   line-height: 1.4;
 }
-@media (max-width: 858px) {
-  .sect {
-    width: 100%;
-    background-size: 100%;
-    height: calc(50vh);
-    margin-top: 10px;
-    display: block;
-  }
-}
-
 a {
   color: white;
 }
@@ -84,19 +68,13 @@ a {
   width: 40%;
   margin-right: 20px;
 }
-@media (max-width: 858px) {
-  .image {
-    background-size: cover;
-    height: calc(100vh - 180px);
-    width: 100%;
-    margin-right: 20px;
-  }
-}
+
 form {
     position: relative;
     width: 35vw;
     height: 70vh;
     padding-top: 7em;
+    top: -15%;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 8px;
@@ -134,5 +112,78 @@ button {
     margin-left: 7em;
     margin-top: 0.8em;
     
+}
+.small{
+  color: #00edff; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   text-align: center;
+  position: relative;
+    top: 15px;
+ 
+}
+@media (max-width: 858px) {
+  .image {
+  display:none; 
+   }
+
+  .sect {
+    width: 100%;
+    background-size: 100%;
+    height: calc(50vh);
+    margin-top: 10px;
+    display: block;
+  }
+
+  section {
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap-reverse;
+    justify-items: center;
+    justify-content: center;
+  }
+
+form {
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+    margin-left:  0%;
+    margin-top: -5%;
+     }
+.input-wrap {
+    position: relative;
+    width: 80%;
+    height: 7vh;
+    margin-bottom: 1em;
+    left: 10%;
+}
+
+input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+}
+button {
+    position: relative;
+    width: 70%;
+    height: 7vh;
+    left: 15%;
+   
+}
+.awesome {
+    position: absolute;
+    z-index: 1;
+    color: gray;
+    margin-left: 5%;
+    top: auto;    
+}
+::placeholder {
+    font-size: 16px;
+    position: relative;
+    left: 3em;
+}
 }
 </style>

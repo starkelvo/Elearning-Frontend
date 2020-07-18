@@ -8,12 +8,24 @@
       <!-- Header writeup -->
       <div class="sect">
           <form action="">
+            <div class="input-wraper">
             <font-awesome-icon class="awesome" :icon="['fas', 'user']"/> <input type="text" placeholder="First Name" required> <br>
+            </div>
+             <div class="input-wraper">
             <font-awesome-icon class="awesome" :icon="['fas', 'user']"/><input type="text" placeholder="Last Name" required> <br>
+             </div>
+             <div class="input-wraper">
             <font-awesome-icon class="awesome" :icon="['fas', 'envelope']"/> <input type="email" placeholder="Email" required> <br>
+             </div>
+             <div class="input-wraper">
             <font-awesome-icon class="awesome" :icon="['fas', 'lock']"/><input type="password" placeholder="Password" required> <br>
+             </div>
+             <div class="input-wraper">
             <font-awesome-icon class="awesome" :icon="['fas', 'lock']"/><input type="password" placeholder="Confirm Password" required> <br>
+              </div>
+                <div class="input-wraper">
             <button type="submit" class="btn btn-primary">SIGN UP</button> <br>
+                </div>
           </form>
       </div>
     </section>
@@ -45,15 +57,6 @@ section {
 
 }
 
-@media (max-width: 858px) {
-  section {
-    width: 100%;
-    display: flexbox;
-    flex-wrap: wrap-reverse;
-    justify-items: center;
-    justify-content: center;
-  }
-}
 /* Header writeup style */
 .sect {
   width: 40%;
@@ -63,15 +66,7 @@ section {
   padding-top: 50px;
   font-weight: lighter;
   line-height: 1.4;
-}
-@media (max-width: 858px) {
-  .sect {
-    width: 100%;
-    background-size: 100%;
-    height: calc(50vh);
-    margin-top: 10px;
-    display: block;
-  }
+  margin-top: -5% ;
 }
 
 a {
@@ -84,14 +79,6 @@ a {
   height: calc(100vh - 200px);
   width: 40%;
   margin-right: 20px;
-}
-@media (max-width: 858px) {
-  .image {
-    background-size: cover;
-    height: calc(100vh - 180px);
-    width: 100%;
-    margin-right: 20px;
-  }
 }
 form {
     position: relative;
@@ -135,5 +122,72 @@ button {
     margin-left: 7em;
     margin-top: 0.8em;
     
+}
+
+@media (max-width: 858px) {
+  section {
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap-reverse;
+    justify-items: center;
+    justify-content: center;
+  }
+  
+
+  .image {
+   display: none;
+  }
+  
+form {
+    position: relative;
+    width: 70%;
+    height: 70vh;
+    left:15%;
+}
+.sect {
+  width: 100%;
+  font-size: 18px;
+  padding-left: 0px;
+  padding-top: 0px;
+ }
+ 
+input, button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+}
+
+.input-wraper {
+    position: relative;
+    width: 80%;
+    height: 7vh;
+    margin-bottom: 1em;
+    left: 10%;
+}
+
+::placeholder {
+    font-size: 16px;
+    position: relative;
+    left: 15%;
+}
+.awesome {
+    position: absolute;
+    z-index: 1;
+    color: gray;
+    margin-left: 5%;
+    margin-top: 0.8em;
+    
+}
+    
+label.logo {
+  font-size: 25px;
+  font-family: montserrat;
+  padding: 0 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 }
 </style>

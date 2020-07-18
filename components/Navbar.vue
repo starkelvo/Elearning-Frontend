@@ -8,12 +8,12 @@
       </label>
       <label for="logo" class="logo">E-LOGO</label>
       <ul>
-        <li><a class="" href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
-        <li><a class="active" href="#">Live Class</a></li>
-        <li><a class="login" href="#">login</a></li>
-        <li><a class="signup" href="#">Signup</a></li>
+        <li><nuxt-link class="" to="/">Home</nuxt-link></li>
+        <li><nuxt-link to="/contact">Contact</nuxt-link></li>
+        <li><nuxt-link to="/about">About</nuxt-link></li>
+        <li><nuxt-link class="active" to="/courses">Live Class</nuxt-link></li>
+        <li><nuxt-link class="login" to="/login">login</nuxt-link></li>
+        <li><nuxt-link class="signup" to="/signup">Signup</nuxt-link></li>
       </ul>
     </nav>
   </div>
@@ -28,7 +28,7 @@ export default {};
 
 nav {
   height: 80%;
-  width: 100%;
+  width: 100%
 }
 label.logo {
   color: #6b62fd;
