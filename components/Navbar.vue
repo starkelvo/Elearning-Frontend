@@ -11,7 +11,7 @@
         <li><nuxt-link class="" to="/">Home</nuxt-link></li>
         <li><nuxt-link to="/contact">Contact</nuxt-link></li>
         <li><nuxt-link to="/about">About</nuxt-link></li>
-        <li><nuxt-link class="active" to="/courses">Live Class</nuxt-link></li>
+        <li><nuxt-link class="active" to="/userSetting">Live Class</nuxt-link></li>
         <li><nuxt-link class="login" to="/login">login</nuxt-link></li>
         <li><nuxt-link class="signup" to="/signup">Signup</nuxt-link></li>
       </ul>

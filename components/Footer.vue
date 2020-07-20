@@ -66,4 +66,23 @@ ul li a {
 .links{
     display: inline-flex;
 }
+
+@media (max-width: 858px) {
+
+.links{
+    display: block;
+}
+.footer {
+    height: fit-content;
+    background: linear-gradient(180deg, rgba(107, 98, 253) 0%, rgba(196, 196, 196) 100%);
+    }
+label.logo {
+  color: #3b3a58;
+}
+ul {
+ display:block;
+ justify-content: center;
+ align-items: center;
+}
+}
 </style>
