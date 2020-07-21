@@ -94,25 +94,17 @@
 /* Main image */
   #image {
     position: relative;
-    width: 65vh;
+    width: 30vw;
     height: 30%;
     left: 5em;
     top: 5em;
   }
 /* Main Image responsiveness */
-  @media (max-width: 952px) {
-    #image {
-      position: relative;
-      width: 65vh;
-      height: 100%;
-      left: 4em;
-      top: 5em;
-    }
-  }
+ 
 /* Watch now button style */
   .btn-danger {
     position: relative;
-    width: 65vh;
+    width: 30vw;
     height: 7%;
     left: 2.5em;
     top: 2.8em;
@@ -188,4 +180,76 @@ input {
   border-radius: 8px solid gray;
   margin-bottom: 2px;
 }
+ @media (max-width: 952px) {
+   
+input {
+  height: 12vh;
+  width: 80vw;
+  left: 10%;
+  border-radius: 8px solid gray;
+  margin-bottom: 7px;
+}
+  #image {
+    position: relative;
+    width: 80vw;
+    height: 30%;
+    left: 10%;
+    top: 2em;
+  }
+    .btn-danger {
+    width: 80vw;
+    height: 7%;
+    left: 10%;
+    top: 1.8em;
+  }
+  .des {
+    width: 100%;
+    margin-bottom: 2em;
+    margin-left: 0%;
+    margin-top: 60px;
+    display:block ;
+    padding: 5% 10%;
+    width: fit-content;
+   }
+  /* Descriptio title style */
+  .title {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+  }
+   .title-desc {
+    font-size: 20px;
+  }
+   .what {
+    position: relative;
+    width: 80%;
+     border-radius: 8px;
+    left: 10%;
+    box-shadow: 0 0 5px rgb(71, 71, 71);
+    padding: 3px;
+
+  }
+   li {
+     width:100% ;
+    height: fit-content ;
+    left: 0;
+    padding-top: 5px;
+   font-size: 15px;
+    line-height: 16px;
+    /* or 19px */
+
+    list-style-type: disc;
+    color: #000000;
+  }
+  
+.requirement, .comments {
+  position: relative;
+  width: 100%;
+  left: 0;
+  padding: 0 10%;
+}
+.comments{
+  margin-bottom: 30px;
+}
+  }
 </style>
