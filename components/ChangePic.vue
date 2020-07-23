@@ -1,21 +1,21 @@
 <template>
     <div>
         <main>
-         <Profile />
-  
-            <div class="course-desc">
-        <!-- Course Image card -->
-        <img src="../assets/images/brain-color-colorful-cube-19677.jpg" class="card-img-top" id="image"
-          style="justify-item: center;" alt="...">
-        <a href="" class="btn btn-danger">Watch now</a>
-        <!-- Course description -->
-        <div class="des">
-          <span class="title">Mathematics</span><br> <small class="title-desc">Learn all the basics of Pythagoras
-            theorem
-            <br>21/07/2020 <br>2hrs 30mins <br> <span style="color: red">Executive class</span></small>
-        </div>
-      <hr>
-      </div>
+           <div class="profile">
+              <div class="image " > 
+              <img src="../assets/images/jzee.jpg" class="image1" alt="profile pic">
+              <div class="image2"></div> 
+              </div>
+          
+            <div class="pro2">
+              <ul>
+                <li class="name"><a href="">John Doe</a></li>
+                <li class="edit"><nuxt-link to="/editProfile">change profile pic</nuxt-link></li>
+       
+              </ul>
+            </div>
+                        </div>
+          
         </main>
     </div>
 </template>
@@ -81,15 +81,6 @@ li{
   border-radius: 50%;
 
 }
-.course-desc {
-    margin-left: 3em;
-}
- .des {
-    font-family: Roboto;
-    
-    margin-left: 70%;
-    margin-top: -9em;
-  }
   /* Descriptio title style */
   .title {
     font-weight: 600;
