@@ -2,8 +2,8 @@
 <div id="body">
     <div ></div>
       <Navbar />
-     
-    
+    <Contact />
+    <Footer />
       
   
     </div>
@@ -16,8 +16,8 @@ export default {
 </script>
 
 <style scoped>
-body{
-    background: #F2F2F2
+#body{
+       background: linear-gradient(to right, rgb(165, 214, 243),rgb(194, 224, 238),rgb(217, 233, 236));
 }
 .nav{
     position: absolute;

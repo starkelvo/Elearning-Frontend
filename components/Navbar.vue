@@ -28,7 +28,9 @@ export default {};
 
 nav {
   height: 80%;
-  width: 100%
+  width: 100%;
+  z-index: 200;
+  position: relative;
 }
 label.logo {
   color: #6b62fd;
@@ -98,21 +100,36 @@ a:hover {
   }
   ul {
     position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #6b62fd;
+    width: 0%;
+    height: 0vh;
     top: 80px;
-    left: -100%;
+    left: 300%;
     text-align: center;
     transition: all 0.5s;
+    background: #19173f48;
   }
   nav ul li {
     display: block;
-    margin: 50px 0;
+    width: 50%;
+    margin:  0;
+    padding: 20px;
     line-height: 30px;
+    background: #6a62fdc7;
+    border-bottom: 1px solid #6b62fd;
+    margin-left: 100%;
+    transition: all 1s;
+  
   }
+   nav ul li:hover{
+       background: #29283b;
+  
+   }
   nav ul li a {
     font-size: 20px;
+    font-weight: bold;
+    color: white;
+   text-shadow: 0.5px 0.5px tomato,-0.5px -0.5px tomato;
+ 
   }
   a:hover,
   a.active {
@@ -120,7 +137,36 @@ a:hover {
     color: cyan;
   }
   #check:checked ~ ul {
-    left: 0;
+    left: 0%;
+     width: 100%;
+    height: 100vh;
+   
+  }
+  #check:checked ~ ul li:nth-child(odd){
+   animation: li 0.7s linear both;
+ animation-delay: 0.5s;
+ 
+  }
+  #check:checked ~ ul li:nth-child(even){
+   animation-delay: 1s;
+ animation: li 0.7s linear both;
+
+  }
+   
+  @keyframes li {
+    0%{
+      margin-left: 100%;  
+      padding: 0px;
+    line-height: 0px;
+    border-radius: 50%;
+    }
+    100%{
+      margin-left: 50%;
+      padding: 20px;
+    line-height: 30px;
+     border-radius: 0 0 0 0;
+ 
+     }
   }
 }
 </style>
