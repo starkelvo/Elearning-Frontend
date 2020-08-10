@@ -1,7 +1,6 @@
 <template>
     <div>
-            <Navbar/>
-        <Signup />
+            <Signup />
     </div>
 </template>
 

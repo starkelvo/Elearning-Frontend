@@ -148,8 +148,8 @@ a:hover {
  
   }
   #check:checked ~ ul li:nth-child(even){
-   animation-delay: 1s;
- animation: li 0.7s linear both;
+   animation-delay: 0.5s;
+ animation: li 0.6s linear both;
 
   }
    

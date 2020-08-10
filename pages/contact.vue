@@ -1,9 +1,7 @@
 <template>
 <div id="body">
     <div ></div>
-      <Navbar />
     <Contact />
-    <Footer />
       
   
     </div>

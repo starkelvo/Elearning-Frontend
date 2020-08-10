@@ -1,7 +1,8 @@
+
 <template>
     <div>
-         <SubscriptionStatus />
-        </div>
+                <FindYourAccount />
+    </div>
 </template>
 
 <script>
