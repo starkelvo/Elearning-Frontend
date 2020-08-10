@@ -1,7 +1,8 @@
+
 <template>
     <div>
-         <SubscriptionStatus />
-        </div>
+        <NoPhoneAccess />
+    </div>
 </template>
 
 <script>

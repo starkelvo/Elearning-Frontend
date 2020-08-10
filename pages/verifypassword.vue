@@ -1,7 +1,6 @@
 <template>
     <div>
-            <Navbar/>
-        <VerifyPassword />
+         <VerifyPassword />
     </div>
 </template>
 

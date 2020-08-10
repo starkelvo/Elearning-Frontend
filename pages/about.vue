@@ -1,6 +1,5 @@
 <template>
 <div id="body">
-      <Navbar />
     <div id="about-container">
        <b-img class="image1" center src="https://empoweredtech.usc.edu/wp-content/uploads/2017/08/em-2-945x350.jpg" 
        alt="Center image"></b-img>

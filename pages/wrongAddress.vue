@@ -1,7 +1,7 @@
 <template>
     <div>
-         <SubscriptionStatus />
-        </div>
+         <WrongAddress />
+    </div>
 </template>
 
 <script>

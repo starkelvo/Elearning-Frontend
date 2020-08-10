@@ -1,7 +1,5 @@
 <template>
     <div>
-        <Navbar />
         <Course />
-        <Footer />
-    </div>
+     </div>
 </template>

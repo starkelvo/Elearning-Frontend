@@ -1,11 +1,9 @@
 <template>
   <div class="containe">
     <div>
-      <Navbar />
       <Header />
       </div>
       <Courses />
-      <Footer />
     </div>
 </template>
 

@@ -14,6 +14,7 @@
              <div class="input-wrap">
                        <font-awesome-icon class="awesome" :icon="['fas', 'lock']"/><input type="password" placeholder="Password" required> <br>
              </div>
+             
             <button type="submit" class="btn btn-primary">verify</button> <br>
            </form>
       </div>
@@ -45,7 +46,9 @@ section {
   justify-content: center;
 
 }
-
+h3{
+  text-align: center;
+}
 /* Header writeup style */
 .sect {
   width: 40%;

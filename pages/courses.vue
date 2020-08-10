@@ -1,8 +1,6 @@
 <template>
     <div>
-        <Navbar />
         <Courses class="course" />
-        <Footer />
     </div>
 </template>
 <style scoped>

@@ -1,15 +1,13 @@
 <template>
     <div>
-         <SubscriptionStatus />
-        </div>
+       <RequestPasswordCode />
+        </div> 
 </template>
-
 <script>
 export default {
     
 }
 </script>
-
-<style scoped>
+<style>
 
 </style>

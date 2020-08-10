@@ -1,9 +1,7 @@
 <template>
     <div>
-        <Navbar />
         <UserSetting />
-        <Footer />
-    </div>
+       </div>
 </template>
 
 <script>
