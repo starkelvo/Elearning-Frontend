@@ -9,12 +9,12 @@
       <div class="sect">
           <form action="">
             <div class="input-wrap">
-               <font-awesome-icon class="awesome" :icon="['fas', 'envelope']"/> <input type="email" placeholder="Email" required>
+               <font-awesome-icon class="awesome" :icon="['fas', 'envelope']"/> <input type="email" v-model="email" placeholder="Email" required>
             </div> 
              <div class="input-wrap">
-                       <font-awesome-icon class="awesome" :icon="['fas', 'lock']"/><input type="password" placeholder="Password" required> <br>
+                       <font-awesome-icon class="awesome" :icon="['fas', 'lock']"/><input type="password" v-model="password" placeholder="Password" required> <br>
              </div>
-            <button type="submit" class="btn btn-primary">log in</button> <br>
+            <button type="submit" class="btn btn-primary" @click.prevent="login">log in</button> <br>
             <small><nuxt-link to="/signup" class="small" >Forgot Password?</nuxt-link></small>
           </form>
       </div>
@@ -23,9 +23,41 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
+  data(){
+    return{
+      email: '',
+      password: ''
+    }
+  },
+    methods: {
+      login(){
+        // retrieve details user inputed
+        let postData = {
+          email: this.email,
+          password: this.password
+        }
+
+        // try to log user in if result is successful else create logic to display error
+
+        axios.post('https://elearning-kelvin.herokuapp.com/api/v1/login', postData)
+        .then((val) => {
+          console.log(val.data.data)
+
+          // write logic to check if user data came back successfully
+          // if successful store user data in local storage and vuex store
+          // then direct user to the required page and do not show login button again
+          this.$router.push('/Courses')
+        })
+        .catch(err => {
+          // if there is an error display an error message informing the user that his details are wrong
+          console.log('error is: ', err)
+        })
+      }
+    }
     
-    };
+  };
 </script>
 
 <style scoped>
